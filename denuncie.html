@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <script src='https://api.mapbox.com/mapbox-gl-js/v2.8.2/mapbox-gl.js'></script>
+    <link href='https://api.mapbox.com/mapbox-gl-js/v2.8.2/mapbox-gl.css' rel='stylesheet' />
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Denuncie Aqui</title>
+    <link rel="stylesheet" href="./styles/denuncie.css">
+</head>
+
+<style>
+    body { margin: 0; padding: 0; }
+    #map { position: absolute; top: 0; bottom: 0; width: 100%; height: 92vh; margin-top: 8vh; }
+    </style>
+    <script src="https://api.mapbox.com/mapbox-gl-js/plugins/mapbox-gl-geocoder/v5.0.0/mapbox-gl-geocoder.min.js"></script>
+    <link rel="stylesheet" href="https://api.mapbox.com/mapbox-gl-js/plugins/mapbox-gl-geocoder/v5.0.0/mapbox-gl-geocoder.css" type="text/css">
+
+<body>
+    
+    <header>
+        <nav>
+            <a class="logo" href="./metis.html"> Métis </a>
+
+            <div class="images" href="/">
+                    <ul class = "nav-list">
+                        <li>
+                            <div class = "seta" >
+                            <a href=""> </a>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+        </nav>
+    </header>
+    <main>
+    <div id='map'></div>
+    <script>
+        // TO MAKE THE MAP APPEAR YOU MUST
+        // ADD YOUR ACCESS TOKEN FROM
+        // https://account.mapbox.com
+        mapboxgl.accessToken = 'pk.eyJ1IjoiZGllZ29wYXNzb3MzMiIsImEiOiJjbDN5cjR4aWowMGJ4M2NraGx6dHhybXY1In0.pRZ_Yd9fZ-cGwmQkaM4kmA';
+        const map = new mapboxgl.Map({
+        container: 'map',
+        style: 'mapbox://styles/mapbox/streets-v11',
+        center: [-79.4512, 43.6568],
+        zoom: 13
+        });
+        
+        // Add the control to the map.
+        map.addControl(
+        new MapboxGeocoder({
+        accessToken: mapboxgl.accessToken,
+        mapboxgl: mapboxgl
+        })
+        );
+        </script>
+</main>
+
+    
+<footer></footer>
+</body>
+</html>

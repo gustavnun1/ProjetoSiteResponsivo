@@ -1,0 +1,224 @@
+* {
+    margin: 0;
+
+    padding: 0;
+}
+
+#nav-site a{
+    color: rgb(109, 19, 117);
+    text-decoration: none;
+    transition: 0.3s;
+    font-size: 18px;
+    font-family: sans-serif;
+    text-transform:uppercase;
+    letter-spacing:4px;
+}
+#foot-content a{
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    transition: 0.3s;
+    font-size: 24px;
+    font-family: sans-serif;
+    text-transform:uppercase;
+    letter-spacing:4px;
+}
+
+a:hover {
+    opacity:0.7;
+
+
+}
+#nav-site .logo{
+    font-size: 30px;
+    margin-left: -10%;
+}
+body{
+}
+.container{
+   display: flex;
+   align-items: center;
+   width: 100%;
+}
+#nav-site{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background-color: rgb(240, 233, 233);
+    height: 8vh;
+    grid-area: n;
+}
+#content{
+    background-image: url(../imgs/imgFundo.png);
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+}
+.nav-list{
+    display: flex;
+    
+}
+.tituloRegistro{
+    margin-left: 200%;
+    margin-top: 6%;
+}
+.tituloRegistro:hover{
+    text-decoration: underline;
+}
+.tituloSuporte{
+    margin-left: 300%;
+    margin-top: 7%;
+}
+.tituloSuporte:hover{
+    text-decoration: underline;
+}
+img{
+    height: 20px;
+    width: 20px;
+}
+li{
+    list-style-type: none;    
+}
+#foot-content{
+    display: flex;
+    background-color: rgb(240, 233, 233);
+    height: 10vh;
+    align-items: center;
+    justify-content: space-around;
+    margin-top: 10%;
+}
+#searchText{
+    background-color: rgb(151, 112, 189);
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    border-radius: 15px;
+    width: 400px;
+    visibility: hidden;
+}
+.inputSearch{
+    background: none;
+    border: none;
+    width: 90%;
+    outline: none;
+}
+.imgLupa{
+    margin-left: 100%;
+}
+.iconeInstagram{
+    margin-left: -80%;
+}
+.iconeFacebook{
+    margin-left: -20%;
+}
+.iconeSuporte{
+    margin-left: 50%;
+    margin-top: 50%;
+}
+#foot-images{
+    justify-content: space-between;
+    display: flex;
+}
+
+.textoMain{
+    color: aliceblue;
+    font-size: 50px;
+    font-family: sans-serif;
+    font-weight: 400;
+    text-decoration: none;
+    margin-top: 20%;
+    margin-left: 9%;
+    width: 70%;
+}
+.legendaMain{
+    color: aliceblue;
+    font-size: 26px;
+    font-family: sans-serif;
+    font-weight: 400;
+    text-decoration: none;
+    margin-left: 9%;
+    width: 70%;
+}
+/*----------------------------------------------------------------PAGINA 2-------------------------------------------------------------------*/
+
+
+#panel_sec{
+    display: flex;
+
+}
+.imagem_fundo2{
+    height: 700px;
+    width: 800px;
+    margin-top: 40%;
+    margin-left: 5%;
+}
+.text_panel{
+    font-size: 40px;
+    font-family: sans-serif;
+    width: 35%;
+    margin-top: 30%;
+    font-weight: bold;
+    margin-left: 8%;
+    color: rgb(0, 0, 0); text-shadow: rgb(177, 176, 176) 0.1em 0.1em 0.4em
+}
+button{
+    background: none;
+    color: rgb(88, 86, 197);
+    border: none;
+    font-size: 20px;
+    text-decoration: underline;
+    margin-left: 30%;
+    cursor: pointer;
+}
+
+/*-----------------RESPONSIVIDADE--------------*/
+
+
+@media (max-width:750px){
+
+    .logo{
+        margin-left: 100%;
+    }
+
+    .tituloRegistro{
+        margin-left: 20%;
+    }
+    .tituloSuporte{
+        margin-left: 50%;
+    }
+
+    .imagem_fundo2{
+        height: 200px;
+        width: 200px;
+        visibility: hidden;
+    }
+    .textoMain{
+        font-size: 40px;
+        width: 100%;
+        margin-left: 5%;
+        margin-top: 40%;
+        
+    }
+    .legendaMain{
+        font-size: 20px;
+        margin-left: 5%;
+    }
+    .text_panel{
+        width: 82%;
+        margin-top: 25%;
+    }
+    button{
+        margin-left: 37%;
+    }
+    #div_img{
+        display: none;
+    }
+    #content{
+        background-position: center;
+        background-image: url(../imgs/imgFundo_cel.jpg);
+        background-size: 100vw 100vh;
+    }
+    #foot-content{
+        margin-top: 20%;
+    }
+}
